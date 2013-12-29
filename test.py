@@ -40,7 +40,7 @@ class TestCheckerFunctions(unittest.TestCase):
         moves = BLIND_CHECK[2:]
         for move in setups:
             self.checker.make_move(move)
-        for move in setups:
+        for move in moves:
             can_move = self.checker.check_move(move)
             self.assertFalse(can_move)
 
