@@ -6,7 +6,7 @@ class Checker(object):
     def __init__(self, translate = False):
         self.__translate = translate
 
-    def check_move(self, old , netw = None):
+    def check_move(self, old , new = None):
         "Checks whether a given move is legal"
         if new == None:
             old, new = old
