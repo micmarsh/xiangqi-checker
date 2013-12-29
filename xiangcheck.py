@@ -2,9 +2,11 @@ import widget
 
 class Checker(object):
     __board = widget.Board()
-    __translate = False
 
-    def check_move(self, old , new = None):
+    def __init__(self, translate = False):
+        self.__translate = translate
+
+    def check_move(self, old , netw = None):
         "Checks whether a given move is legal"
         if new == None:
             old, new = old
